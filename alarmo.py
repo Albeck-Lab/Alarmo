@@ -12,7 +12,7 @@ BLOCK_SIZE = 1024*4
 alarm_duration_threshold = 20 #20 seconds
 reset_timer = 20
 
-URL = "https://discord.com/api/webhooks/1240034509597052990/5qLJb4YvovYAnHrMG9ZThSNfbjU9F0lk0MuBB8CDSbmj4zSLGXNNTzlvS_YvytirmF8W"
+URL = "" #Your Discord Webhook
 
 freq_bins = np.fft.fftfreq(BLOCK_SIZE) * RATE #FFT frequencies map
 target_indices = []
