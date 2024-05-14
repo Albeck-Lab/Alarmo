@@ -35,6 +35,11 @@ If running on a Raspberry Pi, you may also need to install PortAudio
 - `reset_timer`: When the alarm isn't heard for this number of seconds the alert timers are reset
 - `URL`: The Discord Webhook URL
 
+
+## Testing
+The default target frequencies and amplitude thresholds are set up to detect the alarm in the included audio sample `Alarm Sample.mp3`.
+
+
 ## Under the hood
 Alarmo takes audio input from the microphone and returns samples of length = `BLOCK_SIZE`.
 Fast Fourier Transform of the audio data yields amplitudes for n frequencies where n also = `BLOCK_SIZE`
