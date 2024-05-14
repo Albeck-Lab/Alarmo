@@ -46,6 +46,6 @@ Fast Fourier Transform of the audio data yields amplitudes for n frequencies whe
 It then indexes into the resulting array, grabbing the average amplitudes for the specific frequencies specified in `TARGET_FREQS` and the frequencies on either side of them. For example if the target frequency was 5000 Hz it'd average the amplitudes of 4999 Hz, 5000 Hz and 5001 Hz. Why do this? Just because you've asked for the amplitude of 5000 Hz doesn't mean the FFT will have returned the amplitude for that specific frequency. It might instead yield the amplitude for 5002 Hz or 4998 Hz depending on how `RATE` and `BLOCK_SIZE` are set. Taking the mean of the amplitude of surrounding frequencies gives us a pretty good approximation of their amplitudes even if the actual frequency bins given by `np.fft.fftfreq` are a little off. Next, the amplitudes are compared to the thresholds specified by `AMPLITUDE_THRESHOLDS`. Only when *all* the amplitudes are above their respective threshold will the alarm be considered "on".
 
 ## Acknowledgements
-Thanks to [Pierre Dubouilh](https://github.com/pldubouilh) for the [idea](https://github.com/pldubouilh/alarm).
-Icon sourced from [here](https://www.iconfinder.com/icons/2542103/alarm_alert_emergency_light_icon).
-`Alarm Sample.mp3` provided by [Elijah Kofke](https://www.linkedin.com/in/elijah-kofke-97a61b73/).
+- Thanks to [Pierre Dubouilh](https://github.com/pldubouilh) for the [idea](https://github.com/pldubouilh/alarm).
+- Icon sourced from [here](https://www.iconfinder.com/icons/2542103/alarm_alert_emergency_light_icon).
+- `Alarm Sample.mp3` provided by [Elijah Kofke](https://www.linkedin.com/in/elijah-kofke-97a61b73/).
