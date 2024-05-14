@@ -1,5 +1,5 @@
 # Alarmo
-A simple alarm detector in Python
+A simple alarm detector in Python. Alarmo listens to the frequencies you specify. If they're above the threshold you set you'll get a Discord notification.
 
 ## Requirements
 - [Discord Webhook](https://pypi.org/project/discord-webhook/): `pip install discord_webhook`
