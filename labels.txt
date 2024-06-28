@@ -1,0 +1,2 @@
+0 Alarm
+1 Background Noise
